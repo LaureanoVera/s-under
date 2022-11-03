@@ -4,7 +4,7 @@ import { Navbar as NavbarChild } from "react-bootstrap";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "./CartWidget";
 
-function BasicExample() {
+function Navbar() {
   return (
     <NavbarChild bg="light" expand="lg">
       <Container>
@@ -25,4 +25,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Navbar;

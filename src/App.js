@@ -1,6 +1,5 @@
 import "./App.css";
 import "./bootstrap.min.css";
-import { useState } from "react";
 import Navbar from "./components/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
 
