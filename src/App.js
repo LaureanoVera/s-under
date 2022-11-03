@@ -1,15 +1,14 @@
 import "./App.css";
+import "./bootstrap.min.css";
 import { useState } from "react";
-import Header from "./components/Header";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
-  const [name, setName] = useState("Laureano");
   return (
     <div className="App">
-      <Header />;
-      <Body name={name} setName={setName} />;
+      <Navbar />
+      <ItemListContainer greeting="Welcome!" />
     </div>
   );
 }
