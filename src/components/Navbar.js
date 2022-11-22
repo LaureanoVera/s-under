@@ -3,19 +3,21 @@ import Nav from "react-bootstrap/Nav";
 import { Navbar as NavbarChild } from "react-bootstrap";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <NavbarChild bg="light" expand="lg">
       <Container>
-        <NavbarChild.Brand href="#home">S-Under</NavbarChild.Brand>
+        <Link to="/">S-Under</Link>
         <NavbarChild.Toggle aria-controls="basic-Navbar-nav" />
         <NavbarChild.Collapse id="basic-Navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Categories" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Blacks</NavDropdown.Item>
+              <Link to="/category/blacks">Blacks</Link>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">Whites</NavDropdown.Item>
+              <Link to="/category/whites">Whites</Link>
             </NavDropdown>
           </Nav>
         </NavbarChild.Collapse>
